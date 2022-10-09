@@ -1,0 +1,43 @@
+.contact-card{
+    margin: 1rem 2rem;
+    display: inline-block;
+    background: #f7f3f3;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contents{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header{
+    margin-top: 1rem;
+    display: flex;
+    font-display: row;
+    width: inherit;
+    justify-content: space-around;
+    align-items: center;
+    img{
+        background: rgb(65, 141, 99);
+        border-radius: 50px;
+    }
+    h1{
+        color: rgb(65, 141, 99);
+        font-size: 1.35rem;
+        text-overflow: hidden;
+        line-clamp: 1;
+        line-height: 1.3rem;
+    }
+
+    h2{
+        color: rgb(139, 158, 145);
+        font-size: 1.2rem;
+        span{
+            font-size: .7rem;
+        }
+    }
+}

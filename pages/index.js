@@ -1,8 +1,6 @@
 import ContactScreen from "../screens/ContactScreen/ContactScreen";
 
 
-
-
 export async function getStaticProps(context) {
   const res = await fetch("https://jsonplaceholder.typicode.com/users")
   const data = await res.json();
@@ -17,7 +15,7 @@ export async function getStaticProps(context) {
 export default function Home(props) {
   return (
     <div>
-      <ContactScreen props = {props.data} />
+      <ContactScreen props = {props.data}/>
     </div>
   )
 }
