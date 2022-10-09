@@ -1,17 +1,28 @@
-import React from "react";
+import React,{useState} from "react";
 import ContactCard from "../../components/ContactCard/ContactCard";
-import NavBar from "../../components/NavBar/NavBar";
+
 
 
 
 
   
 function ContactScreen({props}) {
+    const [searchTerm , setSearchTerm] = useState('')
   return (
     <div className="container">
-      <NavBar />
+      <div className="search-form">
+        <input type="text" className="search-bar" placeholder="Search Your Contacts By Name.." onChange = {(event) => {
+            setSearchTerm(event.target.value);
+        }}/>
+        </div>
       <div className="contact-section">
-        {props.map(item => {
+        {props.filter((item) => {
+            if (searchTerm == ''){
+                return item
+            }else if (item.name.toLowerCase().includes(searchTerm.toLowerCase())){
+                return item
+            }
+        }).map(item => {
             return (
                 <ContactCard key = {item.id} data= {item}/>
             )

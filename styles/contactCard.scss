@@ -8,6 +8,7 @@
     height: 300px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .contents{
     width: 95%;
@@ -25,20 +26,22 @@
     width: inherit;
     justify-content: space-around;
     align-items: center;
+    .contact-name{
+        max-width: 200px;
+        margin-left: 10%;
+    }
     img{
-        background: rgb(65, 141, 99);
+        background: $textGreen;
         border-radius: 50px;
     }
     h1{
-        color: rgb(65, 141, 99);
+        color: $textGreen;
         font-size: 1.35rem;
-        text-overflow: hidden;
-        line-clamp: 1;
-        line-height: 1.3rem;
+        line-height: 1.5rem;
     }
 
     h2{
-        color: rgb(139, 158, 145);
+        color: $textGreenLight;
         font-size: 1.2rem;
         font-weight: 400;
     }
