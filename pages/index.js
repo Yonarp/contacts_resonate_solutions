@@ -13,7 +13,7 @@ export async function getStaticProps(context) {
 export default function Home(props) {
   return (
     <div>
-      {JSON.stringify(props.data, null, 2)}
+      Hello Next.js
     </div>
   )
 }
