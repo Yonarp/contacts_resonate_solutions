@@ -1,5 +1,9 @@
 @import '../styles/variables.scss';
 
+
+// ----------------------------------------The SCSS file for the contact screen page -------------------------------------
+
+
 .container{
     max-width: 100vw;
     height:auto;
@@ -38,7 +42,7 @@
     background:$footerBackground;
 }
 
-
+//------------------------------------------------------------RESPONSIVE MEASURES-------------------------------------------------------//
 @media only screen and (max-width: 991px) {
     .search-bar{
         font-size: 1rem;
