@@ -22,5 +22,5 @@ next also has integration with vercel which will make deployment alot easier.
  
  # WEBSITE LINK
  
- [Link To Project](contacts-gold.vercel.app)
+ [Link To Project] (https://contacts-gold.vercel.app/)
 
