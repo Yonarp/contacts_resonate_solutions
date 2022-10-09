@@ -1,17 +1,21 @@
+@import "../styles/variables.scss";
+
+
 .contact-card{
     margin: 1rem 2rem;
     display: inline-block;
-    background: #f7f3f3;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    height: 250px;
-    width: 350px;
-    border-radius: 10px;
+    width: 450px;
+    height: 300px;
     display: flex;
     flex-direction: column;
 }
 .contents{
     width: 95%;
     margin: 0 auto;
+    background: $cardColor;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding: 2rem 2rem;
 }
 
 .header{
@@ -36,8 +40,14 @@
     h2{
         color: rgb(139, 158, 145);
         font-size: 1.2rem;
-        span{
-            font-size: .7rem;
-        }
+        font-weight: 400;
+    }
+}
+
+.contact-info{
+    
+    h3{
+        font-size: 1rem;
+        font-weight: 100;
     }
 }
