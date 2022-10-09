@@ -1,3 +1,7 @@
+import ContactScreen from "../screens/ContactScreen/ContactScreen";
+
+
+
 
 export async function getStaticProps(context) {
   const res = await fetch("https://jsonplaceholder.typicode.com/users")
@@ -13,7 +17,7 @@ export async function getStaticProps(context) {
 export default function Home(props) {
   return (
     <div>
-      Hello Next.js
+      <ContactScreen props = {props.data} />
     </div>
   )
 }
